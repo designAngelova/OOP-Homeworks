@@ -1,0 +1,5 @@
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\SoftUni-Learning-System\obj\Debug\SoftUni-Learning-System.csprojResolveAssemblyReference.cache
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\SoftUni-Learning-System\bin\Debug\SoftUni-Learning-System.exe
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\SoftUni-Learning-System\bin\Debug\SoftUni-Learning-System.pdb
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\SoftUni-Learning-System\obj\Debug\SoftUni-Learning-System.exe
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\SoftUni-Learning-System\obj\Debug\SoftUni-Learning-System.pdb

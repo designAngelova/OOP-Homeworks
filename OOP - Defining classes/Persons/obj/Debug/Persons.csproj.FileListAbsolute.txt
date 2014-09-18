@@ -1,0 +1,5 @@
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Persons\bin\Debug\Persons.exe
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Persons\bin\Debug\Persons.pdb
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Persons\obj\Debug\Persons.exe
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Persons\obj\Debug\Persons.pdb
+C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Persons\obj\Debug\Persons.csprojResolveAssemblyReference.cache
