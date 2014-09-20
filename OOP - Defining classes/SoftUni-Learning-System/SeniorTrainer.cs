@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftUni_Learning_System
+﻿namespace SoftUni_Learning_System
 {
+    using System;
+
     internal class SeniorTrainer : Trainer
     {
         public SeniorTrainer(string fName, string lName, short age)

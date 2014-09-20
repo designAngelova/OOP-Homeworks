@@ -6,7 +6,6 @@ class Component
     private string name;
     private decimal price;
 
-    //      Constructors
     public Component(string name, decimal price, string details = "N/A")
     {
         this.Details = details;
@@ -14,10 +13,9 @@ class Component
         this.Price = price;
     }
 
-    //      Properties
     public string Details
     {
-        get { return details; }
+        get { return this.details; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -25,13 +23,13 @@ class Component
                 throw new ArgumentNullException("Component -> details");
             }
 
-            details = value;
+            this.details = value;
         }
     }
 
     public string Name
     {
-        get { return name; }
+        get { return this.name; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -39,13 +37,13 @@ class Component
                 throw new ArgumentNullException("Component -> name");
             }
 
-            name = value;
+            this.name = value;
         }
     }
 
     public decimal Price
     {
-        get { return price; }
+        get { return this.price; }
         set
         {
             if (value < 0)
@@ -53,7 +51,7 @@ class Component
                 throw new ArgumentOutOfRangeException("Component -> price");
             }
 
-            price = value;
+            this.price = value;
         }
     }
 

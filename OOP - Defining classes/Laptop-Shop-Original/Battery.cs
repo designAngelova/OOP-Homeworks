@@ -6,7 +6,6 @@ public class Battery
     private double longevity;
     private string type;
 
-    //      Constructors
     public Battery(double longevit, string type)
     {
         this.Longevity = longevity;
@@ -15,13 +14,12 @@ public class Battery
 
     public Battery(string type) :this(0, type)
     {
-        
+        // Reusing parent constructor
     }
 
-    //      Properties
     public double Longevity
     {
-        get { return longevity; }
+        get { return this.longevity; }
         set
         {
             if (longevity < 0)
@@ -35,7 +33,7 @@ public class Battery
 
     public string Type
     {
-        get { return type; }
+        get { return this.type; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -47,7 +45,6 @@ public class Battery
         }
     }
 
-    //      Formatting methods
     public override string ToString()
     {
         return string.Format("Longevity: {0}, Type: {1}", this.longevity, this.type);

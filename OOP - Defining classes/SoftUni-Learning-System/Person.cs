@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftUni_Learning_System
+﻿namespace SoftUni_Learning_System
 {
+    using System;
+
     internal abstract class Person
     {
         protected string firstName;
@@ -26,7 +22,7 @@ namespace SoftUni_Learning_System
 
         public string FirstName
         {
-            get { return firstName; }
+            get { return this.firstName; }
             private set
             {
                 if (String.IsNullOrEmpty(value))
@@ -34,13 +30,13 @@ namespace SoftUni_Learning_System
                     throw new ArgumentNullException("firstName");
                 }
 
-                firstName = value;
+                this.firstName = value;
             }
         }
 
         public string LastName
         {
-            get { return lastName; }
+            get { return this.lastName; }
             private set
             {
                 if (String.IsNullOrEmpty(value))
@@ -48,13 +44,13 @@ namespace SoftUni_Learning_System
                     throw new ArgumentNullException("lastName");
                 }
 
-                lastName = value;
+                this.lastName = value;
             }
         }
 
         public short Age
         {
-            get { return age; }
+            get { return this.age; }
             private set
             {
                 if (age < 0 || age > 100)
@@ -62,13 +58,14 @@ namespace SoftUni_Learning_System
                     throw new ArgumentOutOfRangeException("age");
                 }
 
-                age = value;
+                this.age = value;
             }
         }
 
         public override string ToString()
         {
-            return string.Format("FirstName: {0}\nLastName: {1}\nAge: {2}\n", firstName, lastName, age);
+            return string.Format("FirstName: {0}\nLastName: {1}\nAge: {2}\n",
+                this.firstName, this.lastName, this.age);
         }
     }
 }

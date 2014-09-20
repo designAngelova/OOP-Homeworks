@@ -13,9 +13,15 @@ public class Laptop
     private string ram;
     private string screen;
 
-    //      Constructors
-    public Laptop(string model, decimal price, Battery battery = null, string graphicsCard = "N/A",
-        string hdd = "N/A", string manifacturer = "N/A", string ram = "N/A", string screen = "N/A", string processor = "N/A")
+    public Laptop(string model,
+        decimal price,
+        Battery battery = null,
+        string graphicsCard = "N/A",
+        string hdd = "N/A",
+        string manifacturer = "N/A",
+        string ram = "N/A",
+        string screen = "N/A",
+        string processor = "N/A")
     {
         this.Battery = battery;
         this.GraphicsCard = graphicsCard;
@@ -28,17 +34,27 @@ public class Laptop
         this.Processor = processor;
     }
 
-    public Laptop(string model, decimal price, Battery battery, string graphicsCard,
-        string hdd, string manifacturer, string ram, string screen)
+    public Laptop(string model,
+        decimal price,
+        Battery battery,
+        string graphicsCard,
+        string hdd,
+        string manifacturer,
+        string ram,
+        string screen)
         : this(model, price, battery, graphicsCard, hdd, manifacturer, ram, screen, "N/A")
     {
-        //reusing constructor
+        // Reusing parent constructor
     }
 
-    public Laptop(string model, decimal price, string graphics, string hdd, string ram)
+    public Laptop(string model,
+        decimal price,
+        string graphics,
+        string hdd,
+        string ram)
         : this(model, price, null, graphics, hdd, "N/A", ram, "N/A")
     {
-        //reusing constructor
+        // Reusing parent constructor
     }
 
     public Laptop(string model, decimal price)
@@ -47,16 +63,15 @@ public class Laptop
         this.Price = price;
     }
 
-    //      Properties
     public Battery Battery
     {
-        get { return battery; }
-        private set { battery = value; }
+        get { return this.battery; }
+        private set { this.battery = value; }
     }
 
     public string GraphicsCard
     {
-        get { return graphicsCard; }
+        get { return this.graphicsCard; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -64,13 +79,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty Graphics Card Value");
             }
 
-            graphicsCard = value;
+            this.graphicsCard = value;
         }
     }
 
     public string Hdd
     {
-        get { return hdd; }
+        get { return this.hdd; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -78,13 +93,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty HDD Value");
             }
 
-            hdd = value;
+            this.hdd = value;
         }
     }
 
     public string Manifacturer
     {
-        get { return manifacturer; }
+        get { return this.manifacturer; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -92,13 +107,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty Manifacturer Value");
             }
 
-            manifacturer = value;
+            this.manifacturer = value;
         }
     }
 
     public string Model
     {
-        get { return model; }
+        get { return this.model; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -106,13 +121,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty Model Value");
             }
 
-            model = value;
+            this.model = value;
         }
     }
 
     public decimal Price
     {
-        get { return price; }
+        get { return this.price; }
         set
         {
             if (value < 0)
@@ -120,13 +135,13 @@ public class Laptop
                 throw new ArgumentOutOfRangeException("Invalid Price Value");
             }
 
-            price = value;
+            this.price = value;
         }
     }
 
     public string Processor
     {
-        get { return processor; }
+        get { return this.processor; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -134,13 +149,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty Processor Value");
             }
 
-            processor = value;
+            this.processor = value;
         }
     }
 
     public string Ram
     {
-        get { return ram; }
+        get { return this.ram; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -148,13 +163,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty RAM Value");
             }
 
-            ram = value;
+            this.ram = value;
         }
     }
 
     public string Screen
     {
-        get { return screen; }
+        get { return this.screen; }
         set
         {
             if (String.IsNullOrEmpty(value))
@@ -162,14 +177,13 @@ public class Laptop
                 throw new ArgumentNullException("Empty Screen Value");
             }
 
-            screen = value;
+            this.screen = value;
         }
     }
     // ToString override ommited - only implemented in Battery class, please see the code below
 
     public static void Main()
     {
-        // creating a new instance without some info
         Laptop myLappy = new Laptop("Lenovo G500", 600, new Battery(4.0, "Varta"), "NVidia GForce 440MX", "Maxtor 500GB",
                                     "Lenovo", "Pravetz 1100 2GB DDR2");
 
@@ -178,13 +192,14 @@ public class Laptop
         Laptop herLappy = new Laptop("Dachia 5656G", 1222.12m);
 
         Laptop theirLappy = new Laptop("Lenovo G500", 600, new Battery(4.0, "Varta"), "NVidia GForce 440MX", "Maxtor 500GB",
-                                    "Lenovo", "Pravetz 1100 2GB DDR2", "14.5 1680x720");
+                                "Lenovo", "Pravetz 1100 2GB DDR2", "14.5 1680x720");
 
 
         foreach (PropertyDescriptor descriptor in TypeDescriptor.GetProperties(myLappy))
         {
             string name = descriptor.Name;
             object value = descriptor.GetValue(myLappy);
+
             if ((value != null) && (value != "N/A"))
             {
                 Console.WriteLine("{0}: {1}", name, value);  

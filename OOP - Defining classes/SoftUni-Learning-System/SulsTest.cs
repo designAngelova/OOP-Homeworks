@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace SoftUni_Learning_System
+﻿namespace SoftUni_Learning_System
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Linq;
+    using System.Threading;
+
     class SulsTest
     {
         public static void Main()
@@ -30,7 +28,10 @@ namespace SoftUni_Learning_System
             };
 
             Func<Person, bool> where = o => o.GetType().IsSubclassOf(typeof(CurrentStudent));
-            var result = allPeople.Where(where).Cast<CurrentStudent>().ToList().OrderBy(x => x.AverageGrade);
+            var result = allPeople.Where(where)
+                                    .Cast<CurrentStudent>()
+                                    .ToList()
+                                    .OrderBy(x => x.AverageGrade);
 
             foreach (var person in result)
             {

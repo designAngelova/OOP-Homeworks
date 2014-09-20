@@ -1,24 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftUni_Learning_System
+﻿namespace SoftUni_Learning_System
 {
+    using System;
+
     internal abstract class CurrentStudent : Student
     {
         protected string currentCourse;
 
-        protected CurrentStudent(string fName, string lName, short age,
-            string studentNumber, decimal averageGrade, string course) : base(fName, lName, age, studentNumber, averageGrade)
+        protected CurrentStudent(string fName,
+            string lName,
+            short age,
+            string studentNumber,
+            decimal averageGrade,
+            string course) 
+            : base(fName, lName, age, studentNumber, averageGrade)
         {
             this.CurrentCourse = course;
         }
 
         public string CurrentCourse
         {
-            get { return currentCourse; }
+            get { return this.currentCourse; }
             private set
             {
                 if (String.IsNullOrEmpty(value))
@@ -26,7 +27,7 @@ namespace SoftUni_Learning_System
                     throw new ArgumentNullException("currentCourse");
                 }
 
-                currentCourse = value;
+                this.currentCourse = value;
             }
         }
 

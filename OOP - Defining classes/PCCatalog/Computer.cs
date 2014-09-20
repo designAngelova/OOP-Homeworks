@@ -32,7 +32,7 @@ class Computer
 
     public string Name
     {
-        get { return name; }
+        get { return this.name; }
         private set
         {
             if (String.IsNullOrEmpty(value))
@@ -40,24 +40,26 @@ class Computer
                 throw new ArgumentNullException("Computer -> name");
             }
 
-            name = value;
+            this.name = value;
         }
     }
 
     public decimal Price
     {
-        get { return price; }
+        get { return this.price; }
         private set
         {
             if (value < 0)
             {
                 throw new ArgumentOutOfRangeException("Component -> price");
             }
-            price = value;
+            this.price = value;
         }
     }
 
-    private static decimal CalculatePrice(decimal cpu, decimal hdd, decimal graphics = 0,
+    private static decimal CalculatePrice(decimal cpu,
+        decimal hdd,
+        decimal graphics = 0,
         decimal mBoard = 0)
     {
         return cpu + hdd + graphics + mBoard;
@@ -81,8 +83,7 @@ class Computer
 
 
 public class TestComputerCatalog
-{
-    //testing purposes 
+{ 
     public static void Main()
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("bg-BG");
