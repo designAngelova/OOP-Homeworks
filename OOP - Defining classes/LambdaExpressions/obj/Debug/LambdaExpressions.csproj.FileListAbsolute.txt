@@ -1,5 +1,0 @@
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\LambdaExpressions\bin\Debug\LambdaExpressions.exe.config
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\LambdaExpressions\bin\Debug\LambdaExpressions.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\LambdaExpressions\bin\Debug\LambdaExpressions.pdb
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\LambdaExpressions\obj\Debug\LambdaExpressions.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\LambdaExpressions\obj\Debug\LambdaExpressions.pdb
