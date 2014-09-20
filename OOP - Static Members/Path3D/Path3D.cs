@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
-//bad namespace naming example : ))
-namespace Path3D
+﻿namespace Path3D
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text.RegularExpressions;
+
     class Path3D
     {
         public static List<Point> PathPoints;
@@ -27,9 +24,7 @@ namespace Path3D
 
         public static List<string> GetPoints(string paths)
         {
-
             Regex regex = new Regex(@"X:\s([^,]+),\sY:\s([^,]+),\sZ:\s([^\]]+)");
-
             MatchCollection match = regex.Matches(paths);
 
             return (from Match m in match select m.Value).ToList();

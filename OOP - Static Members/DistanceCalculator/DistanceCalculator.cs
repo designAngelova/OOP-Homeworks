@@ -9,6 +9,7 @@ class DistanceCalculator
         {
             throw new ArgumentException("args", "Please provide an even set of parameters");
         }
+
         List<int> pValues = new List<int>();
         List<int> qValues = new List<int>();
 
@@ -30,15 +31,15 @@ class DistanceCalculator
         {
             preSquareValues += Math.Pow(pValues[i] - qValues[i], 2);
         }
+
         Console.WriteLine(preSquareValues);
         return Math.Sqrt(preSquareValues);
     }
-    
 }
 
 class Tester
 {
-    static void Main(string[] args)
+    static void Main()
     {
         Console.WriteLine(DistanceCalculator.TwoPointDistance(1, 2, 3, 4, 5, 6, 7, 8));  
     }

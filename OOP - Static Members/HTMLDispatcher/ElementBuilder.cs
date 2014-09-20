@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using HTMLDispatcher;
 
 class ElementBuilder
 {
@@ -22,37 +21,39 @@ class ElementBuilder
 
     public string ElementName
     {
-        get { return elementName; }
+        get { return this.elementName; }
         set
         {
             if (String.IsNullOrEmpty(value))
             {
                 throw new ArgumentNullException("elementName", "Please enter a correct html tag");
             }
+
+            this.elementName = value;
         }
     }
 
     public StringBuilder Element
     {
-        get { return element; }
-        private set { element = value; }
+        get { return this.element; }
+        private set { this.element = value; }
     }
 
     public string Content
     {
-        get { return content; }
-        private set { content = value; }
+        get { return this.content; }
+        private set { this.content = value; }
     }
 
     public static string[] GetAllTags()
     {
         string allTags = File.ReadAllText("html-tags.txt");
+
         return allTags.Split(new string[] {Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries);
     }
 
     public void AddAttribute(string attribute, string value)
     {
-        //if performance is important for the project use char loop instead it`s a lot faster!
         int attrIndex = this.element.ToString().IndexOf(">");
         this.element.Insert(attrIndex, " " + attribute + "=\"" + value + "\"");
     }
@@ -68,8 +69,7 @@ class ElementBuilder
     public static string Repeat(StringBuilder str, int n)
     {
         return Enumerable.Repeat(str, n)
-                         .Aggregate(
-                            new StringBuilder(), (sb, s) => sb.Append(s))
+                         .Aggregate(new StringBuilder(), (sb, s) => sb.Append(s))
                          .ToString();
     }
 
@@ -89,7 +89,6 @@ class DispatcherTester
 {
     public static void Main()
     {
-        // Testing functionality of the class above
         ElementBuilder div = new ElementBuilder("div");
         div.AddAttribute("id", "welcome");
         div.AddAttribute("style", "background-color:blue");

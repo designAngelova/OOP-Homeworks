@@ -1,5 +1,0 @@
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\BitArray-Imp\bin\Debug\BitArray-Imp.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\BitArray-Imp\bin\Debug\BitArray-Imp.pdb
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\BitArray-Imp\obj\Debug\BitArray-Imp.csprojResolveAssemblyReference.cache
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\BitArray-Imp\obj\Debug\BitArray-Imp.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\BitArray-Imp\obj\Debug\BitArray-Imp.pdb
