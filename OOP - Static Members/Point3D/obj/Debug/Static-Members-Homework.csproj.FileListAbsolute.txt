@@ -1,6 +1,0 @@
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\bin\Debug\Static-Members-Homework.exe.config
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\bin\Debug\Static-Members-Homework.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\bin\Debug\Static-Members-Homework.pdb
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\obj\Debug\Static-Members-Homework.csprojResolveAssemblyReference.cache
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\obj\Debug\Static-Members-Homework.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Static-Members-Homework\obj\Debug\Static-Members-Homework.pdb

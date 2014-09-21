@@ -1,5 +1,0 @@
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\PCCatalog\bin\Debug\PCCatalog.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\PCCatalog\bin\Debug\PCCatalog.pdb
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\PCCatalog\obj\Debug\PCCatalog.csprojResolveAssemblyReference.cache
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\PCCatalog\obj\Debug\PCCatalog.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\PCCatalog\obj\Debug\PCCatalog.pdb

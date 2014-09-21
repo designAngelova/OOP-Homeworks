@@ -1,5 +1,0 @@
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Path3D\bin\Debug\Path3D.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Path3D\bin\Debug\Path3D.pdb
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Path3D\obj\Debug\Path3D.csprojResolveAssemblyReference.cache
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Path3D\obj\Debug\Path3D.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\Path3D\obj\Debug\Path3D.pdb

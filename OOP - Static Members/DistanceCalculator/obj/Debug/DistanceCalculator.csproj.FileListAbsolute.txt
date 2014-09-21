@@ -1,5 +1,0 @@
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\DistanceCalculator\bin\Debug\DistanceCalculator.exe.config
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\DistanceCalculator\bin\Debug\DistanceCalculator.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\DistanceCalculator\bin\Debug\DistanceCalculator.pdb
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\DistanceCalculator\obj\Debug\DistanceCalculator.exe
-c:\users\vera\documents\visual studio 2013\Projects\Static-Members-Homework\DistanceCalculator\obj\Debug\DistanceCalculator.pdb

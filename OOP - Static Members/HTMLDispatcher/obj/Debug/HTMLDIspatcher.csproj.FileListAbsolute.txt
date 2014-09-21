@@ -1,5 +1,0 @@
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\HTMLDIspatcher\bin\Debug\HTMLDIspatcher.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\HTMLDIspatcher\bin\Debug\HTMLDIspatcher.pdb
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\HTMLDIspatcher\obj\Debug\HTMLDIspatcher.csprojResolveAssemblyReference.cache
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\HTMLDIspatcher\obj\Debug\HTMLDIspatcher.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Static-Members-Homework\HTMLDIspatcher\obj\Debug\HTMLDIspatcher.pdb

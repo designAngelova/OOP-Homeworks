@@ -1,5 +1,0 @@
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Laptop-Shop-Original\bin\Debug\Laptop-Shop-Original.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Laptop-Shop-Original\bin\Debug\Laptop-Shop-Original.pdb
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Laptop-Shop-Original\obj\Debug\Laptop-Shop-Original.csprojResolveAssemblyReference.cache
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Laptop-Shop-Original\obj\Debug\Laptop-Shop-Original.exe
-C:\Users\Vera\documents\visual studio 2013\Projects\Laptop-Shop\Laptop-Shop-Original\obj\Debug\Laptop-Shop-Original.pdb
