@@ -47,7 +47,7 @@ function PopTip() {
         theLayer.left = pX + 10;
         theLayer.top = pY + 15;
         theLayer.visibility = 'show';
-	} else {
+    } else {
         theLayer = eval('document.all[\'ToolTip\']');
     }
 
@@ -73,7 +73,7 @@ function PopTip() {
 function HideTip() {
     args = HideTip.arguments;
 
-	if (b == "Netscape") {
+    if (b == "Netscape") {
         document.layers['ToolTip'].visibility = 'hide';
     } else {
         document.all['ToolTip'].style.visibility = 'hidden';
