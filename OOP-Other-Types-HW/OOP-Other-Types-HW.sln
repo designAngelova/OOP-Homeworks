@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionCalculatorApp", "Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericListApp", "GenericListApp\GenericListApp.csproj", "{B9F8E42C-6FCC-4BE7-A629-84FB7C78C660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordDocumentGeneratorApp", "WordDocumentGeneratorApp\WordDocumentGeneratorApp.csproj", "{A89BB177-1CAD-483D-93F5-588A47E0F06F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B9F8E42C-6FCC-4BE7-A629-84FB7C78C660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F8E42C-6FCC-4BE7-A629-84FB7C78C660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F8E42C-6FCC-4BE7-A629-84FB7C78C660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89BB177-1CAD-483D-93F5-588A47E0F06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89BB177-1CAD-483D-93F5-588A47E0F06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89BB177-1CAD-483D-93F5-588A47E0F06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89BB177-1CAD-483D-93F5-588A47E0F06F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
