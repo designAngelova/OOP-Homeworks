@@ -29,11 +29,11 @@ function mouseMove(evn) {
         if (document.layers['ToolTip'].visibility == 'show') {
             PopTip();
         }
-	} else {
+    } else {
         if (document.all['ToolTip'].style.visibility == 'visible') {
             PopTip();
         }
-	}
+    }
 };
 
 function PopTip() {
@@ -65,9 +65,9 @@ function PopTip() {
         }
 
         theLayer.style.pixelLeft = pX + 10;
-		theLayer.style.pixelTop = pY + 15;
+        theLayer.style.pixelTop = pY + 15;
         theLayer.style.visibility = 'visible';
-		}
+    }
 };
 
 function HideTip() {

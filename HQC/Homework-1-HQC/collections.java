@@ -54,8 +54,7 @@ public class Collections {
     	i.set((T) a[j]);
     }
 
-    public static <T> int binarySearch(List<? extends Comparable<? super T>> list, T key) 
-	{
+    public static <T> int binarySearch(List<? extends Comparable<? super T>> list, T key) {
         if ((list instanceof RandomAccess) || (list.size() < BINARYSEARCH_THRESHOLD)) {
         	return Collections.indexedBinarySearch(list, key);
         } else {

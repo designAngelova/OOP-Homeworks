@@ -40,7 +40,7 @@ class Manager {
         return ucwords(str_replace('add_', '', $name));
     }
 
-	public function settings()
+    public function settings()
     {
         return [];
     }
