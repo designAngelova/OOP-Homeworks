@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
-using System.Reflection;
 using Novacode;
 
+// Please add the image file to the "data folder". The archive was > 2MB so I had to remove it.
 namespace WordDocumentGeneratorApp
 {
     public class SoftUniSandbox
     {
         public static void CreateDocument()
         {
-            string fileName = "C://Sites//SoftUniContest.docx";
             string headerText = "SoftUni OOP Game Contest";
             string contentText = "SoftUni is organizing a contest for the best role playing game from the OOP teamwork projects." +
                                  " The winning teams will receive a grand prize!" +
@@ -30,8 +29,10 @@ namespace WordDocumentGeneratorApp
             string preFooter = "The top 3 teams will receive a SPECTACULAR prize:";
             string footer = "A HANDSHAKE FROM NAKOV";
 
-            var doc = DocX.Create(fileName);
+            // Creating a Document
+            var doc = DocX.Create("../../MyDoc.docx");
 
+            //Some formatting...
             var titleFormat = new Formatting();
             titleFormat.FontFamily = new System.Drawing.FontFamily("Arial Black");
             titleFormat.Size = 24D;
@@ -47,6 +48,7 @@ namespace WordDocumentGeneratorApp
             doc.AddListItem(bulletedList, bullets[1]);
             doc.AddListItem(bulletedList, bullets[2]);
 
+            // HEADER
             Paragraph title = doc.InsertParagraph(headerText, false, titleFormat);
             title.Alignment = Alignment.center;
 
@@ -60,6 +62,8 @@ namespace WordDocumentGeneratorApp
 
             pic.Height = 250;
             pic.Width = 500;
+
+            // PICTURE
             p.AppendPicture(pic);
 
             p.InsertParagraphAfterSelf("", false);
@@ -67,11 +71,14 @@ namespace WordDocumentGeneratorApp
             p.Position(0);
 
             doc.InsertParagraph(Environment.NewLine);
+
+            // CONTENT
             Paragraph letterBody = doc.InsertParagraph(contentText, false, contentFormat);
             letterBody.Alignment = Alignment.both;
 
             doc.InsertParagraph("", false);
 
+            // BULLETED LIST
             doc.InsertList(bulletedList);
 
             doc.InsertParagraph(Environment.NewLine);
@@ -95,10 +102,12 @@ namespace WordDocumentGeneratorApp
             t.Alignment = Alignment.center;
             t.Design = TableDesign.LightShadingAccent1;
 
+            // TABLE
             doc.InsertTable(t);
 
             doc.InsertParagraph(Environment.NewLine);
 
+            // FOOTER INFO
             Paragraph footer1 = doc.InsertParagraph(preFooter, false);
 
             footer1.InsertParagraphAfterSelf(footer)
@@ -107,7 +116,6 @@ namespace WordDocumentGeneratorApp
                 .UnderlineStyle(UnderlineStyle.singleLine)
                 .Color(Color.Aqua)
                 .Alignment = Alignment.center;
-
             footer1.Alignment = Alignment.center;
 
             doc.SaveAs("../../MyDoc.docx");

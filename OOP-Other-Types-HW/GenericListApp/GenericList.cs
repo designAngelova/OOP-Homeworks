@@ -108,7 +108,7 @@ namespace GenericListApp
 
         public bool Contains(T item)
         {
-            return Find(item) == -1 ? false : true;
+            return Find(item) == -1;
         }
 
         public T Min() 

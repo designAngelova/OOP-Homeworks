@@ -36,7 +36,7 @@ namespace FractionCalculatorApp
         public static Fraction operator +(Fraction f1, Fraction f2)
         {
             long multiple = lcm(f1.Denominator, f2.Denominator);
-            long leftSide = f1.Numerator * multiple/f1.Denominator;
+            long leftSide = f1.Numerator * multiple / f1.Denominator;
             long rightSide = f2.Numerator * multiple / f2.Denominator;
 
             return new Fraction(leftSide + rightSide, multiple);
