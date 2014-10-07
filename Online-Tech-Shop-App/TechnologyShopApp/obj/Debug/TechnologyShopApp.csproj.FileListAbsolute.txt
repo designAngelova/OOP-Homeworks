@@ -1,0 +1,6 @@
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\bin\Debug\TechnologyShopApp.exe.config
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\obj\Debug\TechnologyShopApp.csprojResolveAssemblyReference.cache
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\bin\Debug\TechnologyShopApp.exe
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\bin\Debug\TechnologyShopApp.pdb
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\obj\Debug\TechnologyShopApp.exe
+C:\Users\Vera\Documents\OOP\Homeworks\Online-Tech-Shop-App\TechnologyShopApp\obj\Debug\TechnologyShopApp.pdb

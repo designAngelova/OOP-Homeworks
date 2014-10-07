@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesApp", "ShapesApp\ShapesApp.csproj", "{5045E51A-D2CA-4D35-9409-24CF0D2C641F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfCurtovoKoinareApp", "BankOfCurtovoKoinareApp\BankOfCurtovoKoinareApp.csproj", "{15E9E317-7505-44AE-9ADF-E5DE977E9CF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5045E51A-D2CA-4D35-9409-24CF0D2C641F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5045E51A-D2CA-4D35-9409-24CF0D2C641F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5045E51A-D2CA-4D35-9409-24CF0D2C641F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5045E51A-D2CA-4D35-9409-24CF0D2C641F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E9E317-7505-44AE-9ADF-E5DE977E9CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E9E317-7505-44AE-9ADF-E5DE977E9CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E9E317-7505-44AE-9ADF-E5DE977E9CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E9E317-7505-44AE-9ADF-E5DE977E9CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
