@@ -1,1 +1,0 @@
-C:\Users\Vera\Documents\OOP\Homeworks\Functional-Programming-HW\StudentDatabaseApp\bin\Debug\StudentDatabaseApp.exe.config

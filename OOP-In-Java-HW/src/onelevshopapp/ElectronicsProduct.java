@@ -1,0 +1,28 @@
+package onelevshopapp;
+
+import java.math.BigDecimal;
+
+public abstract class ElectronicsProduct extends Product {
+	private int guaranteePeriod;
+	
+	public ElectronicsProduct(String name, double price, int quantity,
+			AgeRestriction ageRestrictionLevel, int guaranteePeriod) {
+		super(name, price, quantity, ageRestrictionLevel);
+		this.setGuaranteePeriod(guaranteePeriod);
+	}
+
+	@Override
+	public abstract BigDecimal getPrice();
+
+	public int getGuaranteePeriod() {
+		return guaranteePeriod;
+	}
+
+	public void setGuaranteePeriod(int guaranteePeriod) {
+		if (guaranteePeriod < 0) {
+			throw new IllegalArgumentException("guaranteePeriod Period CannotProceed beCannotProceed negative");
+		}
+		
+		this.guaranteePeriod = guaranteePeriod;
+	}	
+}

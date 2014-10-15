@@ -6,8 +6,33 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
+/// <summary>
+/// The class below adds new functionality to the .NET`s "String" class
+/// It has functions for the following:
+/// 1. Create a Md5 Hash
+/// 2. Convert string to bool
+/// 3. Convert string to 'short' data type
+/// 4. Convert string to 'int' data type
+/// 5. Convert string to 'long' data type
+/// 6. Convert string to 'DateTime' data type
+/// 7. Capitalize the first letter of each word
+/// 8. Get a string between two strings
+/// 9. Convert Cyrillic To Latin Letters
+/// 10. Convert Latin To Cyrillic Keyboard
+/// 11. Convert string To Valid Username
+/// 12. Convert string to valid latin filename
+/// 13. Get First Characters from a string
+/// 14. Get file extension from a string path
+/// 15. string to content type
+/// 16. string to byte array
+/// </summary>
 public static class StringExtensions
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="input">An input string with the info that needs hashing</param>
+    /// <returns>A MD5 Hash code of the input string</returns>
     public static string ToMd5Hash(this string input)
     {
         var md5Hash = MD5.Create();
@@ -68,6 +93,14 @@ public static class StringExtensions
             input.Substring(1, input.Length - 1);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="input">The string that holds both start and end string</param>
+    /// <param name="startString">The search starts after this string</param>
+    /// <param name="endString">The search ends at this string</param>
+    /// <param name="startFrom">the starting index between start and ending string</param>
+    /// <returns>A substring of the input string</returns>
     public static string GetStringBetween(
         this string input, string startString, string endString, int startFrom = 0)
     {
@@ -141,7 +174,14 @@ public static class StringExtensions
 
         return input;
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="input">An Username as a string</param>
+    /// <returns>
+    /// Replaces some of the characters in the username that are considered invalid with empty string
+    ///  and returns new string
+    /// </returns>
     public static string ToValidUsername(this string input)
     {
         input = input.ConvertCyrillicToLatinLetters();
@@ -154,6 +194,12 @@ public static class StringExtensions
         return Regex.Replace(input, @"[^a-zA-z0-9_\.\-]+", string.Empty);
     }
 
+    /// <summary>
+    /// Gets the first few characters of a string
+    /// </summary>
+    /// <param name="input">The string from which first characters are extracted</param>
+    /// <param name="charsCount">How many characters to return as a string</param>
+    /// <returns>A string with the characters</returns>
     public static string GetFirstCharacters(this string input, int charsCount)
     {
         return input.Substring(0, Math.Min(input.Length, charsCount));
@@ -175,6 +221,11 @@ public static class StringExtensions
         return fileParts.Last().Trim().ToLower();
     }
 
+    /// <summary>
+    /// Gets the appropriate Content type of a file
+    /// </summary>
+    /// <param name="fileExtension">a string with the file`s extension type</param>
+    /// <returns>A valid Content data string depending on file type</returns>
     public static string ToContentType(this string fileExtension)
     {
         var fileExtensionToContentType = new Dictionary<string, string>
@@ -196,6 +247,14 @@ public static class StringExtensions
         return "application/octet-stream";
     }
 
+    /// <summary>
+    /// More about the Buffer.BlockCopy method:
+    /// The Buffer type handles ranges of bytes.
+    /// It includes the optimized Buffer.
+    /// BlockCopy method — this copies a range of bytes from one array to another.
+    /// </summary>
+    /// <param name="input">a string that will be cast to char-array and separated into bytes(non logical separation)</param>
+    /// <returns>a byte array of the input string</returns>
     public static byte[] ToByteArray(this string input)
     {
         var bytesArray = new byte[input.Length * sizeof(char)];
