@@ -4,6 +4,7 @@ import geometry.Interfaces.PerimeterMeasurable;
 import geometry.Interfaces.VolumeMeasurable;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
@@ -26,29 +27,31 @@ public class Tester {
 		}
 		
 		List<Shape> largeVolumeShapes = Arrays.asList(shapeCollection)
-												.stream()
-												.filter(s -> s instanceof VolumeMeasurable)
-												.filter(v -> ((VolumeMeasurable) v).getVolume() > 40)
-												.collect(Collectors.toList());
+				.stream()
+				.filter(s -> s instanceof VolumeMeasurable)
+				.filter(v -> ((VolumeMeasurable) v)
+						.getVolume() > 40)
+						.collect(Collectors.toList());
 		
 		for (Shape shape : largeVolumeShapes) {
 			//System.out.println(shape);
 		}
 		
-		List<Shape> planeShapesByPerimeter = Arrays.asList(shapeCollection)
-													.stream()
-													.filter(p -> p instanceof PlaneShape)
-													.collect(Collectors.toList());
-		
-		planeShapesByPerimeter.sort((p1, p2) -> {
-			PerimeterMeasurable Shape1 = (PerimeterMeasurable) p1;
-			PerimeterMeasurable Shape2 = (PerimeterMeasurable) p2;
+		Comparator<Shape> byPerimeter = (s1, s2) -> {
+			PerimeterMeasurable Shape1 = (PerimeterMeasurable) s1;
+			PerimeterMeasurable Shape2 = (PerimeterMeasurable) s2;
 			double perimeterShape1 = Shape1.getPerimeter();
 			double perimeterShape2 = Shape2.getPerimeter();
 			
 			return perimeterShape1 < perimeterShape2 ? -1 :
 				perimeterShape1 > perimeterShape2 ? 1 : 0;		
-		});
+		};
+		
+		List<Shape> planeShapesByPerimeter = Arrays.asList(shapeCollection)
+				.stream()
+				.filter(p -> p instanceof PlaneShape)
+				.sorted(byPerimeter)
+				.collect(Collectors.toList());
 		
 		for (Shape shape : planeShapesByPerimeter) {
 			System.out.println(shape);

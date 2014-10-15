@@ -13,6 +13,12 @@ public abstract class ElectronicsProduct extends Product {
 
 	@Override
 	public abstract BigDecimal getPrice();
+	
+	@Override
+	public String toString() {
+		return super.toString() +
+				"Guarantee period: " + this.guaranteePeriod;
+	}
 
 	public int getGuaranteePeriod() {
 		return guaranteePeriod;

@@ -3,9 +3,8 @@ package onelevshopapp;
 import java.math.BigDecimal;
 
 public class Computer extends ElectronicsProduct {
-
 	public Computer(String name, double price, int quantity,
-			AgeRestriction ageRestrictionLevel, int guaranteePeriod) {
+			AgeRestriction ageRestrictionLevel) {
 		super(name, price, quantity, ageRestrictionLevel, 24);
 	}
 

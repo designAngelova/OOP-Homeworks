@@ -1,6 +1,7 @@
 package onelevshopapp;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public abstract class Product implements Buyable {
 	protected String name;
@@ -17,6 +18,14 @@ public abstract class Product implements Buyable {
 		this.ageRestrictionLevel = ageRestrictionLevel;
 	}
 	
+	@Override
+	public String toString() {
+		return "Name: " + name +
+				"\nPrice: " + price.setScale(2, RoundingMode.FLOOR) +
+				"\nQuantity: " + quantity +
+				"\nAge Restriction Level: " + ageRestrictionLevel + "\n";
+	}
+
 	public String getName() {
 		return name;
 	}

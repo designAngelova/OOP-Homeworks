@@ -37,6 +37,14 @@ public class FoodProduct extends Product implements Expirable {
 		return this.price;
 	}
 	
+	
+
+	@Override
+	public String toString() {
+		return super.toString() +
+				"Expiration date: " + this.expirationDate.toString();
+	}
+
 	private void checkIfExpired() {	
 		Date now = new Date();
 		long diff = this.expirationDate.getTime() - now.getTime();
@@ -62,5 +70,13 @@ public class FoodProduct extends Product implements Expirable {
 
 	public void setHasExpired(boolean hasExpired) {
 		this.hasExpired = hasExpired;
+	}
+
+	public long getDaysUntilExpiry() {
+		return daysUntilExpiry;
+	}
+
+	public void setDaysUntilExpiry(long daysUntilExpiry) {
+		this.daysUntilExpiry = daysUntilExpiry;
 	}
 }
