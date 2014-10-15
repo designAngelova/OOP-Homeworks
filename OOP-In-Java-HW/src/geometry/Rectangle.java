@@ -12,16 +12,16 @@ public class Rectangle extends PlaneShape {
 	
 	@Override
 	public double getArea() {
-		return width * height;
+		return this.width * this.height;
 	}
 
 	@Override
 	public double getPerimeter() {
-		return (2 * width) + (2 * height);
+		return (2 * this.width) + (2 * this.height);
 	}
 	
 	public double getWidth() {
-		return width;
+		return this.width;
 	}
 
 	public void setWidth(double width) {
@@ -33,7 +33,7 @@ public class Rectangle extends PlaneShape {
 	}
 
 	public double getHeight() {
-		return height;
+		return this.height;
 	}
 
 	public void setHeight(double height) {

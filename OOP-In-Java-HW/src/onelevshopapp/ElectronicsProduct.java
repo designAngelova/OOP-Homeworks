@@ -21,7 +21,7 @@ public abstract class ElectronicsProduct extends Product {
 	}
 
 	public int getGuaranteePeriod() {
-		return guaranteePeriod;
+		return this.guaranteePeriod;
 	}
 
 	public void setGuaranteePeriod(int guaranteePeriod) {

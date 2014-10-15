@@ -31,7 +31,7 @@ public class SquarePyramid extends SpaceShape {
 	}
 
 	public double getBaseWidth() {
-		return baseWidth;
+		return this.baseWidth;
 	}
 
 	public void setBaseWidth(double baseWidth) {
@@ -43,7 +43,7 @@ public class SquarePyramid extends SpaceShape {
 	}
 
 	public double getHeight() {
-		return height;
+		return this.height;
 	}
 
 	public void setHeight(double height) {
@@ -55,7 +55,7 @@ public class SquarePyramid extends SpaceShape {
 	}
 
 	public double getSlantHeight() {
-		return slantHeight;
+		return this.slantHeight;
 	}
 
 	public void setSlantHeight(double slantHeight) {

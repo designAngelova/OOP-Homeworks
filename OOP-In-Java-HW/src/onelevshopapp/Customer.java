@@ -14,7 +14,7 @@ public class Customer {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -26,7 +26,7 @@ public class Customer {
 	}
 
 	public int getAge() {
-		return age;
+		return this.age;
 	}
 
 	public void setAge(int age) {
@@ -38,7 +38,7 @@ public class Customer {
 	}
 
 	public BigDecimal getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public void setBalance(BigDecimal balance) {

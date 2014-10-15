@@ -48,19 +48,19 @@ public class Triangle extends PlaneShape {
 	}
 	
 	public double getDistanceAB() {
-		double distanceAB = Vertex.getDistanceBetweenPoints(vertices[0], vertices[1]);
+		double distanceAB = Vertex.getDistanceBetweenPoints(this.vertices[0], this.vertices[1]);
 		
 		return distanceAB;
 	}
 	
 	public double getDistanceBC() {
-		double distanceBC = Vertex.getDistanceBetweenPoints(vertices[1], vertices[2]);
+		double distanceBC = Vertex.getDistanceBetweenPoints(this.vertices[1], this.vertices[2]);
 		
 		return distanceBC;
 	}
 	
 	public double getDistanceAC() {
-		double distanceAC = Vertex.getDistanceBetweenPoints(vertices[2], vertices[0]);
+		double distanceAC = Vertex.getDistanceBetweenPoints(this.vertices[2], this.vertices[0]);
 		
 		return distanceAC;
 	}	

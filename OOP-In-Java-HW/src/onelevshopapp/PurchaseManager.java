@@ -8,7 +8,6 @@ import onelevshopapp.customexceptions.ProductOutOfStockException;
 
 public final class PurchaseManager {
 	private PurchaseManager() {
-		
 	}
 	
 	public static void ProcessPurchase(Customer customer, Product product) throws ProductManagementException {

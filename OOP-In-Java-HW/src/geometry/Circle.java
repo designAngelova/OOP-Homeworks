@@ -19,7 +19,7 @@ public class Circle extends PlaneShape {
 	}
 	
 	public double getRadius() {
-		return radius;
+		return this.radius;
 	}
 
 	public void setRadius(double radius) {

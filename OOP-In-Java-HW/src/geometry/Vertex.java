@@ -31,7 +31,7 @@ public abstract class Vertex {
 	}
 
 	public double getX() {
-		return x;
+		return this.x;
 	}
 
 	public void setX(double x) {
@@ -39,7 +39,7 @@ public abstract class Vertex {
 	}
 
 	public double getY() {
-		return y;
+		return this.y;
 	}
 
 	public void setY(double y) {

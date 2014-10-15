@@ -26,7 +26,7 @@ public class Cuboid extends SpaceShape {
 	}
 
 	public double getWidth() {
-		return width;
+		return this.width;
 	}
 
 	public void setWidth(double width) {
@@ -38,7 +38,7 @@ public class Cuboid extends SpaceShape {
 	}
 
 	public double getHeight() {
-		return height;
+		return this.height;
 	}
 
 	public void setHeight(double height) {
@@ -50,7 +50,7 @@ public class Cuboid extends SpaceShape {
 	}
 
 	public double getDepth() {
-		return depth;
+		return this.depth;
 	}
 
 	public void setDepth(double depth) {

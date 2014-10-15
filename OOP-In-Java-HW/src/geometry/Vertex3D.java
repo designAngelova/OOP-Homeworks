@@ -14,7 +14,7 @@ public class Vertex3D extends Vertex {
 	}
 
 	public double getZ() {
-		return z;
+		return this.z;
 	}
 
 	public void setZ(double z) {

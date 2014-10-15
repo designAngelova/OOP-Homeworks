@@ -27,7 +27,7 @@ public abstract class Product implements Buyable {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	public void setName(String name) {
@@ -39,7 +39,7 @@ public abstract class Product implements Buyable {
 	}
 	
 	public BigDecimal getPrice() {
-		return price;
+		return this.price;
 	}
 	
 	public void setPrice(BigDecimal price) {
@@ -51,7 +51,7 @@ public abstract class Product implements Buyable {
 	}
 	
 	public int getQuantity() {
-		return quantity;
+		return this.quantity;
 	}
 	
 	public void setQuantity(int quantity) {
@@ -63,7 +63,7 @@ public abstract class Product implements Buyable {
 	}
 	
 	public AgeRestriction getAgeRestrictionLevel() {
-		return ageRestrictionLevel;
+		return this.ageRestrictionLevel;
 	}
 	
 	public void setAgeRestrictionLevel(AgeRestriction ageRestrictionLevel) {

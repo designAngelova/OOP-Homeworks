@@ -65,7 +65,7 @@ public class FoodProduct extends Product implements Expirable {
 	}
 
 	public boolean isExpired() {
-		return hasExpired;
+		return this.hasExpired;
 	}
 
 	public void setHasExpired(boolean hasExpired) {
@@ -73,7 +73,7 @@ public class FoodProduct extends Product implements Expirable {
 	}
 
 	public long getDaysUntilExpiry() {
-		return daysUntilExpiry;
+		return this.daysUntilExpiry;
 	}
 
 	public void setDaysUntilExpiry(long daysUntilExpiry) {
